@@ -59,6 +59,7 @@ var winners = {r1:r1,r2:r2,r3:r3,c1:c1,c2:c2,c3:c3,D1:D1,D2:D2}
 var gridX = {r1:[],r2:[],r3:[],c1:[],c2:[],c3:[],D1:[],D2:[]};
 var gridO = {r1:[],r2:[],r3:[],c1:[],c2:[],c3:[],D1:[],D2:[]};
 var plays = 0;
+
 function fillGrid(grid,mark) {
     plays++
     var obj;
@@ -73,13 +74,13 @@ function fillGrid(grid,mark) {
     if (winners[keys].includes(grid)) {
         obj[keys].push(grid);
         if (obj[keys].length === 3) {
-            document.getElementsByClassName('model-content').innertext = "WINNER!"
+            
             winner();
         }
     }
    }
    if (plays === 9) {
-    document.getElementsByClassName('model-content').innertext  = "It's a tie!"
+    
        tie();
    }
    return
@@ -87,7 +88,7 @@ function fillGrid(grid,mark) {
 
 function winner(){
     //var button = document.createElement('BUTTON')
-    
+    document.getElementsById('text').innerText = "WINNER!"
    document.querySelector('.bg-modal').style.display = 'flex';
    document.querySelector('.close').addEventListener('click',function(){
       location.reload() 
@@ -99,7 +100,7 @@ function winner(){
 
 function tie(){
     //var button = document.createElement('BUTTON')
-    
+    document.getElementsByClassName('model-content').innerText  = "It's a tie!"
    document.querySelector('.bg-modal').style.display = 'flex';
    document.querySelector('.close').addEventListener('click',function(){
       location.reload() 
