@@ -1,2 +1,3 @@
 # mini-apps-1
-This is a project I completed as a student at [hackreactor](http://hackreactor.com). This project was worked on with a pair.
+Challenge 1 -> TIC TAC TOE (OOP)
+Challenge 3 -> Forms (React)
