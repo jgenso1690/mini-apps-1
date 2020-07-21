@@ -1,0 +1,34 @@
+
+table {
+  width: 300px;
+  height: 50%;
+  margin: auto;
+  border-collapse: collapse;
+  
+}
+
+tr, td {
+  height:100px;
+  width: 50px;
+  font-size: 40px;
+  text-align: center;
+  font-family: 'Acme', sans-serif;
+  color: rgb(104, 102, 102);
+}
+
+#C00, #C01, #C02, #C10, #C11, #C12 {
+  border-bottom: 3px solid rgb(0, 41, 128) ;
+}
+
+#C00, #C01, #C10, #C11, #C20, #C21 {
+border-right: 3px solid rgb(0, 41, 128) ;
+}
+
+#tictactoe {
+  font-family: 'Acme', sans-serif;
+  color: rgb(104, 102, 102);
+  font-size: 20px;
+  text-align: center;
+  padding-bottom: 20px;
+  padding-top: 20px;
+}
