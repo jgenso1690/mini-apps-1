@@ -24,14 +24,14 @@
 <script>
   // Your web app's Firebase configuration
   var firebaseConfig = {
-    apiKey: "AIzaSyCpC_t2r73n9yyAsM8Zf56EtcQMylbbd8g",
-    authDomain: "tictactoe-jimena.firebaseapp.com",
-    databaseURL: "https://tictactoe-jimena.firebaseio.com",
-    projectId: "tictactoe-jimena",
-    storageBucket: "tictactoe-jimena.appspot.com",
-    messagingSenderId: "56865858190",
-    appId: "1:56865858190:web:cc79214d4856103ce19fdf",
-    measurementId: "G-ESYY6HV7MZ"
+    apiKey: process.env.DB_apiKey,
+    authDomain: process.env.DB_authDomain,
+    databaseURL: process.env.DB_databaseURL,
+    projectId: process.env.DB_projectId,
+    storageBucket: process.env.DB_storageBucket,
+    messagingSenderId: process.env.DB_messagingSenderId,
+    appId: process.env.DB_appId,
+    measurementId: process.env.DB_measurementId
   };
   // Initialize Firebase
   firebase.initializeApp(firebaseConfig);
